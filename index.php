@@ -5,8 +5,8 @@
 include_once "./modelo/Producto.php";
 include_once './modelo/ProductoGestion.php';
 //llama al modelo:
-$objProdGestion= new ProductoGestion();
-$lista=$objProdGestion->getListaProducto();
+$objProdGestion = new ProductoGestion();
+$lista = $objProdGestion->getListaProducto();
 //lamando a la vista:
 //$tpl=new Savant3();
 $appNombre="GestorProductos";
@@ -15,4 +15,4 @@ $appAutor="SistemasUni";
 //$tpl->listaProd=$lista;
 //$tpl->display('./vista/indexView.php');
 include_once './vista/indexView.php';
-?>
+
