@@ -7,14 +7,23 @@ class ConsultaDB extends ConexionDB{
         parent::__construct();
     }
     
+    public function get_resultado() {
+        return $this->resultado;
+    }
+
     public function getRow(){
-        $lista=array();
-        if(!$this->resultado=mysql_query($this->stm)){
+        $lista = array();
+        $link  = $this->getLink();
+        $resultado = $this->get_resultado();
+        
+        if(!$this->resultado=$link->query($this->stm)){
             die("Consulta no procesada");
         }
-        while($row=mysql_fetch_array($this->resultado)) {
+        
+        while($row=$resultado->fetch(PDO::FETCH_OBJ)) {
             array_push($lista, $row);
         }
+        
         return $lista;
     }
     

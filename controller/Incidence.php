@@ -16,11 +16,14 @@ class Incidence {
     private $appNombre;
     private $appTitulo;
     private $appAutor;
-    
-    public function __construct($appNombre, $appTitulo, $appAutor) {
+    private $rootfile;
+
+
+    public function __construct($appNombre, $appTitulo, $appAutor, $rootfile) {
         $this->appNombre = $appNombre;
         $this->appTitulo = $appTitulo;
         $this->appAutor = $appAutor;
+        $this->rootfile = $rootfile;
     }
     
     public function get_appNombre() {
@@ -33,6 +36,10 @@ class Incidence {
 
     public function get_appAutor() {
         return $this->appAutor;
+    }
+    
+    public function get_rootfile() {
+        return $this->rootfile;
     }
     
     public function fullNamePage() {

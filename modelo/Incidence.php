@@ -18,7 +18,7 @@ class Incidence {
     private $descriptionIncidence;
     private $solutionIncidence;
     private $dateIncidence;
-    private $dateSlutionIncidence;
+    private $dateSolutionIncidence;
     private $priorityIncidence;
     private $recurrenceIncidence;
     private $impactIncidence;
@@ -27,13 +27,13 @@ class Incidence {
     private $userModify;
     private $statusIncidence;
     
-    public function __construct($idIncidence, $nameIncidence, $descriptionIncidence, $solutionIncidence, $dateIncidence, $dateSlutionIncidence, $priorityIncidence, $recurrenceIncidence, $impactIncidence, $leveIncidence, $origenIncidence, $userModify, $statusIncidence) {
+    public function __construct($idIncidence, $nameIncidence, $descriptionIncidence, $solutionIncidence, $dateIncidence, $dateSolutionIncidence, $priorityIncidence, $recurrenceIncidence, $impactIncidence, $leveIncidence, $origenIncidence, $userModify, $statusIncidence) {
         $this->idIncidence = $idIncidence;
         $this->nameIncidence = $nameIncidence;
         $this->descriptionIncidence = $descriptionIncidence;
         $this->solutionIncidence = $solutionIncidence;
         $this->dateIncidence = $dateIncidence;
-        $this->dateSlutionIncidence = $dateSlutionIncidence;
+        $this->dateSolutionIncidence = $dateSolutionIncidence;
         $this->priorityIncidence = $priorityIncidence;
         $this->recurrenceIncidence = $recurrenceIncidence;
         $this->impactIncidence = $impactIncidence;
